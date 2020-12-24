@@ -1,3 +1,13 @@
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     margin:0 auto;
@@ -25,8 +35,36 @@ h1{
     font-size: 64px;
 }
 
+.weather-info{
+    font-size:16px;
+}
+
+.red{
+    color: red;
+}
+
 .main{
     flex-grow:1;
+}
+
+form{
+    padding-left: 10px;
+}
+
+input{
+    padding:8px;
+    width:280px;
+    border:5px solid rgb(175, 216, 253);
+    border-radius:5px;
+}
+
+button{
+    margin-left:10px;
+    padding:10px 20px;
+    color: white;
+    background-color: rgb(65, 65, 173);
+    border-radius: 4px;
+    font-size: 18px;
 }
 
 .footer{
