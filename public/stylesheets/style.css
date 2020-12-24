@@ -1,0 +1,46 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding:0 16px;
+    font-size:24px;
+}
+
+
+nav{
+    margin-bottom: 40px;
+}
+
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 800;
+    padding-right: 20px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+.main{
+    flex-grow:1;
+}
+
+.footer{
+    padding-top:30px;
+    border-top:2px solid grey;
+    color: #888888;
+}
+
+img{
+    width: 30vw;
+}
+
+@media(min-width:769px){
+    body{
+    max-width:600px;
+    }
+}
