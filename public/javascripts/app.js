@@ -8,7 +8,7 @@ form.addEventListener("submit",(e)=>{
     locationInfo.classList.remove('red');
     locationInfo.textContent = 'Loading ..'
     weatherInfo.textContent='';
-    fetch(`http://localhost:3002/weather?address=${address.value}`).then((response)=>{
+    fetch(`/weather?address=${address.value}`).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             locationInfo.classList.add('red')
