@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,16 @@
     <link rel="icon" href="/images/weather.png">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
+
 <body>
     <div class="main">
         {{>header}}
-        <div class="portrait"><img src="/images/download.jpeg" alt="mario"></div>
+        <div class="portrait">
+            <img src="/images/me.jpg" alt="portfolio">
+            <p class="about-info">This site was created by {{name}}. It uses data from <a href="https://www.mapbox.com/">mapbox.com</a> and <a href="https://openweathermap.org/">openweathermap.org</a></p>
+        </div>
     </div>
     {{>footer}}
 </body>
+
 </html>

@@ -27,7 +27,7 @@ app.get('', (req, res)=>{
 
 app.get('/about', (req,res)=>{
     res.render('about',{
-       title: 'About Page',
+       title: 'About Me',
        name:'Romik Roy'
     })
 })
@@ -35,7 +35,7 @@ app.get('/about', (req,res)=>{
 app.get('/help', (req,res)=>{
     res.render('help',{
        title: 'Help Page',
-       message:'I am here for you help',
+       message:'This page is under maintainance and will be updated by developer',
        name: 'Romik Roy'
     })
 })

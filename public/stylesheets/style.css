@@ -94,8 +94,30 @@ button:hover {
     color: #888888;
 }
 
+.portrait{
+    display: flex;
+}
+
 img {
-    width: 30vw;
+    width: 200px;
+    border-radius: 4px;
+    margin-right:10%;
+}
+
+.about-info{
+   font-size:18px;
+   justify-self: center;
+}
+
+.about-info a {
+    margin: 0;
+    padding: 0;
+    color:black;   
+}
+
+.about-info a:hover{
+color:rgb(35, 35, 199);
+text-decoration: underline;
 }
 
 @media(min-width:769px) {
@@ -120,5 +142,17 @@ img {
     }
     a{
         font-size: 18px;
+    }
+    .portrait{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portrait img{
+       margin:0 auto;
+    }
+
+    .about-info{
+        margin-top:10%;
     }
 }
