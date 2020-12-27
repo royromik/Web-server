@@ -8,7 +8,6 @@ const geocode = (address, cb) => {
          } else if (body.message || body.error || body.features.length == 0){
              cb('Unable to find the location!!, please try again with another search', undefined)
          } else {
-            // console.log(body)
             cb(undefined, {
                 latitude: body.features[0].center[1],
                 longitude: body.features[0].center[0],
